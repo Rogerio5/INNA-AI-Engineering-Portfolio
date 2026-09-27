@@ -4,16 +4,16 @@
 
 > Portfólio público de **Engenharia de Inteligência Artificial** aplicado a um domínio demonstrativo de educação financeira.
 
-O **INNA AI Engineering Portfolio** reúne implementações práticas de **LangGraph, sistemas multiagentes, Agentic RAG, Tool Calling, Context Engineering, memória, Human-in-the-Loop, GraphRAG, avaliação, observabilidade e resiliência** em uma arquitetura Python modular.
+O **INNA AI Engineering Portfolio** reúne implementações práticas de **LangGraph, sistemas multiagentes, Agentic RAG, Hybrid RAG, Tool Calling, Context Engineering, memória, Human-in-the-Loop, GraphRAG, avaliação, observabilidade e resiliência** em uma arquitetura Python modular.
 
 > **Importante:** este repositório é um portfólio técnico.  
 > Ele não contém a lógica comercial completa da plataforma **Sabino.AI**, dados reais de clientes, credenciais privadas ou regras proprietárias completas do produto financeiro.
 
 ---
 
-## 🎯 Objetivo
+# 🎯 Objetivo
 
-Demonstrar práticas de **Engenharia de IA** utilizadas na construção de aplicações modernas com LLMs e agentes inteligentes.
+Demonstrar práticas de **Engenharia de IA** aplicadas à construção de sistemas com LLMs e agentes inteligentes.
 
 O projeto explora:
 
@@ -22,7 +22,8 @@ O projeto explora:
 - Agentic RAG;
 - Hybrid RAG;
 - Tool Calling;
-- memória e Context Engineering;
+- memória;
+- Context Engineering;
 - governança de agentes;
 - Human-in-the-Loop;
 - GraphRAG;
@@ -202,7 +203,7 @@ flowchart LR
     Y --> A[Answer]
 ```
 
-Principais componentes:
+## Componentes
 
 | Componente | Responsabilidade |
 |---|---|
@@ -229,8 +230,6 @@ Entre eles:
 - Grounding;
 - embeddings;
 - armazenamento vetorial.
-
-Fluxo conceitual:
 
 ```mermaid
 flowchart LR
@@ -671,6 +670,250 @@ Mais detalhes:
 
 ---
 
+# 🎓 Bootcamp 2026 — Engenharia de IA aplicada na prática
+
+Este portfólio também documenta a aplicação prática dos conteúdos estudados no **Bootcamp 2026 — Engenharia de IA**.
+
+A proposta desta trilha não é apenas registrar tecnologias estudadas, mas demonstrar como os conceitos foram transformados em arquitetura, implementação, código, testes e evidências técnicas.
+
+> **Trilha de evidências:**  
+> conteúdo estudado → arquitetura → implementação → código → testes → avaliação → validação técnica
+
+## 🗂️ Evolução por semana
+
+| Semana | Tema | Aplicação no portfólio |
+|---|---|---|
+| **Semana 1** | Agentes e fundamentos | LangGraph, agentes especializados, Tool Use, Context Engineering, Structured Outputs e Gemini |
+| **Semana 2** | Multiagentes e produção | Supervisor, Routing, Handoffs, Checkpoints, Human-in-the-Loop, Phoenix e OpenTelemetry |
+| **Semana 3** | RAG e Retrieval Avançado | Hybrid RAG, RRF, Reranking, Sentence Window, Auto-Merging, Knowledge Graph, GraphRAG e Neo4j |
+| **Semana 4** | Agentic RAG e avaliação | Planner, Research Agent, Tool Calling, LlamaIndex, RAG Triad, DeepEval e Quality Gates |
+
+---
+
+## 🤖 Semana 1 — Agentes e fundamentos
+
+Principais conceitos trabalhados:
+
+- fundamentos de agentes;
+- LangGraph;
+- ferramentas;
+- Context Engineering;
+- saídas estruturadas;
+- integração com modelos de linguagem.
+
+Aplicações presentes no portfólio:
+
+- agentes especializados;
+- Agent Registry;
+- roteamento;
+- estado estruturado;
+- Tool Calling;
+- Context Engineering;
+- Google Gemini.
+
+Documentação:
+
+- [Semana 1 — README](docs/bootcamp-2026/semana-01/README.md)
+- [Evidências da Semana 1](docs/bootcamp-2026/semana-01/evidencias/README.md)
+
+---
+
+## 🧠 Semana 2 — Multiagentes e produção
+
+Principais conceitos trabalhados:
+
+- arquiteturas multiagentes;
+- supervisão;
+- handoffs;
+- persistência de estado;
+- checkpoints;
+- Human-in-the-Loop;
+- tracing;
+- observabilidade;
+- avaliação de agentes.
+
+Aplicações presentes no portfólio:
+
+- Supervisor;
+- Team Routing;
+- Handoff Coordinator;
+- checkpoints;
+- memória;
+- Human-in-the-Loop;
+- OpenTelemetry;
+- Phoenix.
+
+Documentação:
+
+- [Semana 2 — README](docs/bootcamp-2026/semana-02/README.md)
+- [Evidências da Semana 2](docs/bootcamp-2026/semana-02/evidencias/README.md)
+
+---
+
+## 🔎 Semana 3 — RAG e Retrieval Avançado
+
+A Semana 3 aprofunda a arquitetura RAG, com foco em qualidade de retrieval, redução de contexto desnecessário e avaliação.
+
+Principais conceitos:
+
+- RAG;
+- chunking;
+- embeddings;
+- busca textual;
+- busca vetorial;
+- Hybrid Retrieval;
+- Reciprocal Rank Fusion — RRF;
+- reranking;
+- grounding;
+- Sentence Window Retrieval;
+- Auto-Merging Retrieval;
+- RAG Triad;
+- Knowledge Graph;
+- Neo4j;
+- Graph Retrieval;
+- GraphRAG.
+
+Aplicações presentes no portfólio:
+
+```text
+Consulta
+   ↓
+Hybrid Retrieval
+   ↓
+Fusion / Reranking
+   ↓
+Context Engineering
+   ↓
+LLM
+   ↓
+Evaluation
+```
+
+Documentação:
+
+- [Semana 3 — README](docs/bootcamp-2026/semana-03/README.md)
+- [Fundamentos de RAG](docs/bootcamp-2026/semana-03/evidencias/01-fundamentos-rag.md)
+- [Chunking, Embeddings e Hybrid Search](docs/bootcamp-2026/semana-03/evidencias/02-chunking-embeddings-hybrid-search.md)
+- [RRF, Reranking e Grounding](docs/bootcamp-2026/semana-03/evidencias/03-rrf-reranking-grounding.md)
+- [Sentence Window Retrieval](docs/bootcamp-2026/semana-03/evidencias/04-sentence-window-retrieval.md)
+- [Auto-Merging Retrieval](docs/bootcamp-2026/semana-03/evidencias/05-auto-merging-retrieval.md)
+- [RAG Triad e DeepEval](docs/bootcamp-2026/semana-03/evidencias/06-rag-triad-e-deepeval.md)
+- [Knowledge Graphs e GraphRAG](docs/bootcamp-2026/semana-03/evidencias/07-knowledge-graphs-e-graphrag.md)
+
+---
+
+## 🧭 Semana 4 — Agentic RAG e avaliação
+
+A Semana 4 conecta agentes, ferramentas, RAG e avaliação.
+
+Principais conceitos:
+
+- Agentic RAG;
+- Router Agents;
+- Research Agents;
+- Tool Calling;
+- pesquisa multi-documento;
+- LlamaIndex AgentWorkflow;
+- RAG Triad;
+- RAGAS;
+- DeepEval;
+- TruLens;
+- Quality Gates;
+- avaliação automatizada;
+- CI/CD aplicado à avaliação de IA.
+
+Fluxo conceitual:
+
+```text
+Pergunta
+   ↓
+Router / Orchestration
+   ↓
+Research Agent
+   ↓
+Retrieval
+   ↓
+Evidências
+   ↓
+Evaluation
+   ↓
+Resposta fundamentada
+```
+
+Documentação:
+
+- [Semana 4 — README](docs/bootcamp-2026/semana-04/README.md)
+- [Agentic RAG](docs/bootcamp-2026/semana-04/evidencias/01-agentic-rag.md)
+- [Router Agents e Tool Calling](docs/bootcamp-2026/semana-04/evidencias/02-router-agents-e-tool-calling.md)
+- [Pesquisa Multi-documento](docs/bootcamp-2026/semana-04/evidencias/03-pesquisa-multidocumento.md)
+- [RAG Triad](docs/bootcamp-2026/semana-04/evidencias/04-rag-triad.md)
+- [RAGAS](docs/bootcamp-2026/semana-04/evidencias/05-ragas.md)
+- [DeepEval e Quality Gates](docs/bootcamp-2026/semana-04/evidencias/06-deepeval-quality-gates.md)
+- [TruLens e Observabilidade](docs/bootcamp-2026/semana-04/evidencias/07-trulens-e-observabilidade.md)
+- [CI/CD e Avaliação](docs/bootcamp-2026/semana-04/evidencias/08-ci-cd-e-avaliacao.md)
+- [Aplicação na INNA](docs/bootcamp-2026/semana-04/evidencias/09-aplicacao-na-inna.md)
+- [LlamaIndex e otimização](docs/bootcamp-2026/semana-04/evidencias/10-llamaindex-producao-e-otimizacao.md)
+
+---
+
+## 🔬 Trilha de evidências
+
+A organização do portfólio busca conectar estudo e implementação de forma rastreável.
+
+```mermaid
+flowchart TD
+
+    BOOTCAMP[Bootcamp 2026]
+
+    BOOTCAMP --> CONTENT[Conteúdo estudado]
+
+    CONTENT --> ARCH[Arquitetura]
+
+    ARCH --> CODE[Implementação]
+
+    CODE --> SRC[src/inna_ai]
+
+    SRC --> TESTS[Tests]
+
+    TESTS --> DOCS[Documentação / Evidências]
+
+    DOCS --> QUALITY[Quality Gates]
+
+    QUALITY --> CI[GitHub Actions]
+```
+
+As evidências do Bootcamp funcionam como um índice para os componentes reais do projeto.
+
+Principais áreas:
+
+```text
+README
+   ↓
+docs/bootcamp-2026/
+   ↓
+Semana
+   ↓
+Competência
+   ↓
+src/inna_ai/
+   ↓
+tests/
+   ↓
+Quality Gates
+   ↓
+CI
+```
+
+Documentação principal:
+
+- [Bootcamp 2026](docs/bootcamp-2026/README.md)
+- [Semana 1](docs/bootcamp-2026/semana-01/README.md)
+- [Semana 2](docs/bootcamp-2026/semana-02/README.md)
+- [Semana 3](docs/bootcamp-2026/semana-03/README.md)
+- [Semana 4](docs/bootcamp-2026/semana-04/README.md)
+
+---
+
 # 📦 Instalação
 
 ## Windows / PowerShell
@@ -757,6 +1000,13 @@ A pasta `docs/` contém documentação técnica relacionada a:
 - Quality Gates;
 - estudos e implementações do Bootcamp 2026.
 
+Principais documentos:
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [Public Boundary](docs/PUBLIC_BOUNDARY.md)
+- [Security](SECURITY.md)
+- [Bootcamp 2026](docs/bootcamp-2026/README.md)
+
 ---
 
 # 🔒 Segurança
@@ -770,11 +1020,24 @@ Boas práticas utilizadas no projeto:
 - `.env.example`;
 - filtros de privacidade;
 - separação entre código público e produto comercial;
-- validação antes da publicação.
+- validações antes da publicação;
+- permissões explícitas de ferramentas;
+- Human-in-the-Loop;
+- Quality Gates.
 
 Consulte:
 
 [SECURITY.md](SECURITY.md)
+
+---
+
+# 📜 Uso do código
+
+Este repositório é disponibilizado publicamente como **portfólio técnico e material para avaliação profissional**.
+
+Ele **não é distribuído sob uma licença open source**.
+
+A ausência de uma licença explícita significa que este repositório não concede automaticamente autorização ampla para reutilização, redistribuição ou incorporação substancial do código em outros projetos.
 
 ---
 
@@ -783,6 +1046,20 @@ Consulte:
 Os recursos financeiros deste repositório existem exclusivamente para fins educacionais e demonstração técnica de Engenharia de IA.
 
 Eles **não constituem recomendação financeira, recomendação de crédito ou recomendação de investimento**.
+
+---
+
+# 🔗 Relação com INNA Financial Coach AI
+
+Este portfólio foi estruturado a partir de componentes de Engenharia de IA desenvolvidos durante a evolução da **INNA Financial Coach AI**.
+
+O objetivo deste repositório é apresentar esses componentes de forma separada, organizada e adequada para avaliação técnica.
+
+Projeto relacionado:
+
+**[INNA Financial Coach AI](https://github.com/Rogerio5/INNA-Financial-Coach-AI)**
+
+Enquanto a **INNA Financial Coach AI** apresenta a evolução de uma plataforma aplicada ao domínio financeiro, o **INNA AI Engineering Portfolio** concentra-se especificamente nas práticas e arquiteturas de Engenharia de IA.
 
 ---
 
@@ -800,16 +1077,21 @@ GitHub:
 
 ---
 
-## ⭐ Sobre este projeto
+# ⭐ Sobre este projeto
 
-Este repositório foi desenvolvido como parte da evolução prática dos meus estudos e projetos em **Engenharia de Inteligência Artificial**, reunindo conceitos de:
+Este repositório representa a evolução prática dos meus estudos e projetos em **Engenharia de Inteligência Artificial**.
+
+Ele reúne conceitos de:
 
 - Software Engineering;
 - Generative AI;
 - Machine Learning;
 - Agentic AI;
+- Multi-Agent Systems;
 - RAG;
 - LLM Applications;
+- Context Engineering;
+- AI Governance;
 - MLOps;
 - Observability;
 - AI Evaluation.
