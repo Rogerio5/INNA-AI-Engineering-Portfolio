@@ -1,0 +1,3 @@
+# Avaliação opcional.
+# RAGAS e TruLens continuam isolados em ambientes próprios.
+deepeval==4.1.3

@@ -1,0 +1,16 @@
+{
+  "hybrid_retrieval": true,
+  "reranking": true,
+  "vector_database": true,
+  "document_metadata": true,
+  "document_id": true,
+  "chunk_id": true,
+  "document_version": true,
+  "content_checksum": true,
+  "file_type_validation": true,
+  "file_size_validation": true,
+  "prompt_injection_defense": true,
+  "retrieval_trace": true,
+  "retrieval_scores": true,
+  "source_citations": true
+}

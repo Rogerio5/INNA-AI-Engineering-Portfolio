@@ -1,0 +1,16 @@
+{
+  "typed_state": true,
+  "central_supervisor": true,
+  "conditional_routing": true,
+  "financial_agent": true,
+  "rag_agent": true,
+  "report_agent": true,
+  "risk_reviewer": false,
+  "cycle_limit": true,
+  "loop_detection": true,
+  "agent_timeout": false,
+  "token_budget": true,
+  "step_budget": false,
+  "routing_audit": true,
+  "safe_fallback": true
+}

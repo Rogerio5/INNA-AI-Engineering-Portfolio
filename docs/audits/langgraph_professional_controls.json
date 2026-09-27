@@ -1,0 +1,758 @@
+{
+  "recursion_limit": {
+    "found": false,
+    "files": []
+  },
+  "maximum_cycles": {
+    "found": true,
+    "files": [
+      {
+        "path": "src/channels/telegram_update_worker.py",
+        "matches": [
+          {
+            "line": 1621,
+            "content": "max_cycles=("
+          },
+          {
+            "line": 1622,
+            "content": "arguments.max_cycles"
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_observability/productive_metrics.py",
+        "matches": [
+          {
+            "line": 112,
+            "content": "\"max_cycles\","
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_update_jobs/runner.py",
+        "matches": [
+          {
+            "line": 1022,
+            "content": "max_cycles: int | None = None,"
+          },
+          {
+            "line": 1027,
+            "content": "max_cycles existe para testes, smoke tests e"
+          },
+          {
+            "line": 1038,
+            "content": "if max_cycles is not None:"
+          },
+          {
+            "line": 1040,
+            "content": "max_cycles,"
+          },
+          {
+            "line": 1041,
+            "content": "field_name=\"max_cycles\","
+          },
+          {
+            "line": 1103,
+            "content": "max_cycles is not None"
+          },
+          {
+            "line": 1105,
+            "content": ">= max_cycles"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_telegram_update_job_runner.py",
+        "matches": [
+          {
+            "line": 482,
+            "content": "max_cycles=1,"
+          },
+          {
+            "line": 514,
+            "content": "max_cycles=1,"
+          },
+          {
+            "line": 545,
+            "content": "max_cycles=1,"
+          },
+          {
+            "line": 579,
+            "content": "max_cycles=1,"
+          },
+          {
+            "line": 606,
+            "content": "max_cycles=1,"
+          },
+          {
+            "line": 641,
+            "content": "max_cycles=1,"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_telegram_update_worker_entrypoint.py",
+        "matches": [
+          {
+            "line": 402,
+            "content": "keyword[\"max_cycles\"]"
+          }
+        ]
+      }
+    ]
+  },
+  "loop_detection": {
+    "found": false,
+    "files": []
+  },
+  "route_history": {
+    "found": false,
+    "files": []
+  },
+  "routing_reason": {
+    "found": false,
+    "files": []
+  },
+  "timeout": {
+    "found": true,
+    "files": [
+      {
+        "path": "src/agent_tools/catalog.py",
+        "matches": [
+          {
+            "line": 81,
+            "content": "timeout_seconds=rag_timeout,"
+          },
+          {
+            "line": 87,
+            "content": "timeout_seconds=financial_timeout,"
+          },
+          {
+            "line": 93,
+            "content": "timeout_seconds=history_timeout,"
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/core/contracts.py",
+        "matches": [
+          {
+            "line": 24,
+            "content": "TIMEOUT = \"timeout\""
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/core/executor.py",
+        "matches": [
+          {
+            "line": 49,
+            "content": "timeout nativo no cliente utilizado."
+          },
+          {
+            "line": 171,
+            "content": "timeout=("
+          },
+          {
+            "line": 172,
+            "content": "definition.timeout_seconds"
+          },
+          {
+            "line": 180,
+            "content": "status=ToolStatus.TIMEOUT,"
+          },
+          {
+            "line": 190,
+            "content": "\"timeout_seconds\": ("
+          },
+          {
+            "line": 191,
+            "content": "definition.timeout_seconds"
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/core/registry.py",
+        "matches": [
+          {
+            "line": 52,
+            "content": "timeout_seconds: float = 10.0"
+          },
+          {
+            "line": 103,
+            "content": "if self.timeout_seconds <= 0:"
+          },
+          {
+            "line": 105,
+            "content": "\"timeout_seconds deve ser positivo.\""
+          },
+          {
+            "line": 189,
+            "content": "\"timeout_seconds\": ("
+          },
+          {
+            "line": 190,
+            "content": "definition.timeout_seconds"
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/financial_history_tools.py",
+        "matches": [
+          {
+            "line": 186,
+            "content": "timeout_seconds: float = 5.0,"
+          },
+          {
+            "line": 209,
+            "content": "timeout_seconds=timeout_seconds,"
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/financial_tools.py",
+        "matches": [
+          {
+            "line": 346,
+            "content": "timeout_seconds: float = 2.0,"
+          },
+          {
+            "line": 373,
+            "content": "timeout_seconds=timeout_seconds,"
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/rag_tools.py",
+        "matches": [
+          {
+            "line": 391,
+            "content": "timeout_seconds: float = 20.0,"
+          },
+          {
+            "line": 417,
+            "content": "timeout_seconds=timeout_seconds,"
+          }
+        ]
+      },
+      {
+        "path": "src/agent_tools/runtime.py",
+        "matches": [
+          {
+            "line": 118,
+            "content": "# Não aguarda uma tarefa que já excedeu o timeout."
+          }
+        ]
+      },
+      {
+        "path": "src/agents/gemini_client.py",
+        "matches": [
+          {
+            "line": 33,
+            "content": "O timeout limita cada tentativa HTTP e as retentativas"
+          },
+          {
+            "line": 50,
+            "content": "timeout=config.timeout_ms,"
+          }
+        ]
+      },
+      {
+        "path": "src/agents/persistence.py",
+        "matches": [
+          {
+            "line": 66,
+            "content": "timeout=30,"
+          },
+          {
+            "line": 85,
+            "content": "_pool.wait(timeout=30)"
+          },
+          {
+            "line": 94,
+            "content": "_pool.close(timeout=5)"
+          },
+          {
+            "line": 120,
+            "content": "with pool.connection(timeout=15) as connection:"
+          }
+        ]
+      },
+      {
+        "path": "src/agents/supervisor_deadline.py",
+        "matches": [
+          {
+            "line": 137,
+            "content": "timeout=("
+          }
+        ]
+      },
+      {
+        "path": "src/api_client.py",
+        "matches": [
+          {
+            "line": 210,
+            "content": "timeout=5,"
+          },
+          {
+            "line": 244,
+            "content": "timeout=60,"
+          },
+          {
+            "line": 268,
+            "content": "except requests.Timeout as error:"
+          },
+          {
+            "line": 333,
+            "content": "timeout=90,"
+          },
+          {
+            "line": 350,
+            "content": "except requests.Timeout as error:"
+          },
+          {
+            "line": 379,
+            "content": "timeout=30,"
+          },
+          {
+            "line": 402,
+            "content": "timeout=60,"
+          },
+          {
+            "line": 433,
+            "content": "timeout=30,"
+          },
+          {
+            "line": 473,
+            "content": "timeout=60,"
+          }
+        ]
+      },
+      {
+        "path": "src/app.py",
+        "matches": [
+          {
+            "line": 5402,
+            "content": "timeout=30,"
+          },
+          {
+            "line": 5435,
+            "content": "except requests.exceptions.Timeout:"
+          },
+          {
+            "line": 6562,
+            "content": "except requests.exceptions.Timeout:"
+          }
+        ]
+      },
+      {
+        "path": "src/channels/telegram_update_worker.py",
+        "matches": [
+          {
+            "line": 700,
+            "content": "if \"timeout\" in error_code:"
+          },
+          {
+            "line": 701,
+            "content": "return \"timeout\""
+          }
+        ]
+      },
+      {
+        "path": "src/database/connection.py",
+        "matches": [
+          {
+            "line": 433,
+            "content": "\"TIMEOUT_SECONDS\""
+          }
+        ]
+      },
+      {
+        "path": "src/email_sender.py",
+        "matches": [
+          {
+            "line": 49,
+            "content": "timeout=30,"
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_conversation_state/webhook_bridge.py",
+        "matches": [
+          {
+            "line": 182,
+            "content": "if \"timeout\" in error_name:"
+          },
+          {
+            "line": 183,
+            "content": "return \"timeout\""
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_observability/contracts.py",
+        "matches": [
+          {
+            "line": 53,
+            "content": "\"timeout\","
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_observability/health_readiness.py",
+        "matches": [
+          {
+            "line": 45,
+            "content": "\"timeout\","
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_observability/readiness_runtime.py",
+        "matches": [
+          {
+            "line": 204,
+            "content": "timeout=("
+          },
+          {
+            "line": 231,
+            "content": "error_category=\"timeout\","
+          },
+          {
+            "line": 244,
+            "content": "error_category=\"timeout\","
+          },
+          {
+            "line": 414,
+            "content": "error_category=\"timeout\","
+          }
+        ]
+      },
+      {
+        "path": "src/services/telegram_observability/sanitization.py",
+        "matches": [
+          {
+            "line": 93,
+            "content": "\"timeout\","
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_financial_graph_tool_calling_e2e.py",
+        "matches": [
+          {
+            "line": 206,
+            "content": "call_id=\"financial-e2e-timeout\","
+          },
+          {
+            "line": 210,
+            "content": "status=ToolStatus.TIMEOUT,"
+          },
+          {
+            "line": 220,
+            "content": "\"timeout_seconds\": 2.0,"
+          },
+          {
+            "line": 248,
+            "content": "\"timeout\""
+          },
+          {
+            "line": 262,
+            "content": "\"timeout\""
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_financial_history_timeout_budget.py",
+        "matches": [
+          {
+            "line": 41,
+            "content": "assert definition.timeout_seconds == 15.0"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_inna_graph_tool_calling_e2e.py",
+        "matches": [
+          {
+            "line": 137,
+            "content": "call_id=\"e2e-rag-timeout\","
+          },
+          {
+            "line": 139,
+            "content": "status=ToolStatus.TIMEOUT,"
+          },
+          {
+            "line": 149,
+            "content": "\"timeout_seconds\": 20.0,"
+          },
+          {
+            "line": 176,
+            "content": "assert stored_result[\"status\"] == \"timeout\""
+          },
+          {
+            "line": 186,
+            "content": "\"tool:buscar_conhecimento_rag:timeout\""
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_inna_supervisor_deadline.py",
+        "matches": [
+          {
+            "line": 91,
+            "content": "assert call.kwargs[\"timeout\"] == 8.0"
+          },
+          {
+            "line": 117,
+            "content": "timeout=8,"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_inna_supervisor_runtime.py",
+        "matches": [
+          {
+            "line": 195,
+            "content": "assert http_options.timeout == 10_000"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_signed_internal_api_client.py",
+        "matches": [
+          {
+            "line": 206,
+            "content": "assert captured[\"timeout\"] == 60"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_telegram_bridge_observability_hardening.py",
+        "matches": [
+          {
+            "line": 267,
+            "content": "\"timeout\","
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_telegram_readiness_runtime.py",
+        "matches": [
+          {
+            "line": 401,
+            "content": "timeout=2"
+          },
+          {
+            "line": 438,
+            "content": "timeout=1"
+          },
+          {
+            "line": 450,
+            "content": "timeout=2"
+          },
+          {
+            "line": 454,
+            "content": "timeout=2"
+          },
+          {
+            "line": 477,
+            "content": "timeout=2"
+          },
+          {
+            "line": 506,
+            "content": "timeout=1"
+          },
+          {
+            "line": 521,
+            "content": "timeout=2"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_telegram_update_job_runner.py",
+        "matches": [
+          {
+            "line": 78,
+            "content": "def wait(self, timeout):"
+          },
+          {
+            "line": 79,
+            "content": "self.wait_calls.append(timeout)"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_tool_calling_core.py",
+        "matches": [
+          {
+            "line": 52,
+            "content": "timeout_seconds: float = 1.0,"
+          },
+          {
+            "line": 68,
+            "content": "timeout_seconds=("
+          },
+          {
+            "line": 69,
+            "content": "timeout_seconds"
+          },
+          {
+            "line": 271,
+            "content": "timeout_seconds=0.01,"
+          },
+          {
+            "line": 284,
+            "content": "assert result.status == ToolStatus.TIMEOUT"
+          }
+        ]
+      }
+    ]
+  },
+  "retry_policy": {
+    "found": false,
+    "files": []
+  },
+  "graph_execution_tests": {
+    "found": true,
+    "files": [
+      {
+        "path": "tests/integration/test_supervisor_gemini_live.py",
+        "matches": [
+          {
+            "line": 18,
+            "content": "def test_supervisor_gemini_live_retorna_schema_valido():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_financial_history_agent_integration.py",
+        "matches": [
+          {
+            "line": 107,
+            "content": "def test_supervisor_routes_history_messages("
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_inna_agent_core.py",
+        "matches": [
+          {
+            "line": 9,
+            "content": "def test_supervisor_classifica_diagnostico():"
+          },
+          {
+            "line": 22,
+            "content": "def test_supervisor_classifica_rag():"
+          },
+          {
+            "line": 32,
+            "content": "def test_supervisor_classifica_relatorio():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_inna_graph_tool_calling_e2e.py",
+        "matches": [
+          {
+            "line": 52,
+            "content": "def test_graph_routes_explicit_rag_request_through_tool_runtime():"
+          },
+          {
+            "line": 135,
+            "content": "def test_graph_handles_rag_tool_timeout_safely():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_inna_supervisor_hybrid.py",
+        "matches": [
+          {
+            "line": 249,
+            "content": "def test_supervisor_node_registra_metricas():"
+          },
+          {
+            "line": 316,
+            "content": "def test_supervisor_node_registra_erro():"
+          },
+          {
+            "line": 391,
+            "content": "def test_supervisor_preserva_trace_anterior():"
+          },
+          {
+            "line": 428,
+            "content": "def test_supervisor_preserva_erros_anteriores():"
+          },
+          {
+            "line": 471,
+            "content": "def test_supervisor_llm_prioriza_mensagem_protegida():"
+          },
+          {
+            "line": 491,
+            "content": "def test_supervisor_llm_sanitiza_sem_contexto():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_inna_supervisor_runtime.py",
+        "matches": [
+          {
+            "line": 74,
+            "content": "def test_configuracao_padrao_do_supervisor():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/contratos/test_telegram_operational_deploy_contract.py",
+        "matches": [
+          {
+            "line": 207,
+            "content": "def test_main_includes_router_once():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/simulacao/test_telegram_operational_fastapi.py",
+        "matches": [
+          {
+            "line": 398,
+            "content": "def test_router_source_uses_constant_time_comparison():"
+          },
+          {
+            "line": 439,
+            "content": "def test_router_has_no_mutating_job_calls():"
+          }
+        ]
+      },
+      {
+        "path": "tests/unit/test_tool_router.py",
+        "matches": [
+          {
+            "line": 85,
+            "content": "def test_router_informa_dado_ausente():"
+          },
+          {
+            "line": 99,
+            "content": "def test_router_executa_capacidade_semanal():"
+          },
+          {
+            "line": 117,
+            "content": "def test_router_executa_orcamento():"
+          },
+          {
+            "line": 136,
+            "content": "def test_router_pode_apenas_preparar():"
+          },
+          {
+            "line": 199,
+            "content": "def test_router_divida_atrasada_gera_sinal():"
+          },
+          {
+            "line": 213,
+            "content": "def test_router_divida_cartao_atrasada_com_termos_intermediarios():"
+          }
+        ]
+      }
+    ]
+  }
+}
