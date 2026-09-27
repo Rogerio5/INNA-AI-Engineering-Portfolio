@@ -1,5 +1,7 @@
 # INNA AI Engineering Portfolio
 
+[![CI](https://github.com/Rogerio5/INNA-AI-Engineering-Portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Rogerio5/INNA-AI-Engineering-Portfolio/actions/workflows/ci.yml)
+
 Portfólio público de Engenharia de Inteligência Artificial aplicado a um domínio demonstrativo de educação financeira.
 
 O projeto reúne componentes de agentes de IA, LangGraph, Agentic RAG, Tool Calling, memória, Human-in-the-Loop, GraphRAG, avaliação, observabilidade e resiliência em uma arquitetura Python modular.
