@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "commit": "192caaf6dd9c32e73922caa8d676b4b6965429ec",
+  "total_nos": 22,
+  "total_conexoes": 37,
+  "nos": [
+    "__end__",
+    "__start__",
+    "adaptive_gateway",
+    "context_builder",
+    "conversation_summary",
+    "education_agent",
+    "execution_governance",
+    "fallback_agent",
+    "financial_agent",
+    "financial_team_supervisor",
+    "handoff_coordinator",
+    "human_review_interrupt",
+    "human_review_policy",
+    "knowledge_team_supervisor",
+    "rag_agent",
+    "react_agent",
+    "report_agent",
+    "supervisor",
+    "supervisor_mesh",
+    "support_team_supervisor",
+    "task_completion",
+    "team_router"
+  ]
+}

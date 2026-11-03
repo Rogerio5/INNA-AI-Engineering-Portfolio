@@ -1,0 +1,26 @@
+{
+  "commit": "192caaf6dd9c32e73922caa8d676b4b6965429ec",
+  "tipo": "demonstracao_publica_sem_persistencia",
+  "cenarios": [
+    {
+      "cenario": "diagnostico",
+      "intencao": "diagnostico_financeiro",
+      "agente_selecionado": "financial_agent",
+      "agente_final": "financial_agent",
+      "resposta_gerada": true,
+      "status_tarefa": "partially_completed",
+      "rotas_registradas": 1,
+      "erros": 0
+    },
+    {
+      "cenario": "relatorio",
+      "intencao": "relatorio",
+      "agente_selecionado": "report_agent",
+      "agente_final": "report_agent",
+      "resposta_gerada": true,
+      "status_tarefa": "completed",
+      "rotas_registradas": 1,
+      "erros": 0
+    }
+  ]
+}

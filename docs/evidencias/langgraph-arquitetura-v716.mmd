@@ -1,0 +1,68 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	context_builder(context_builder)
+	supervisor(supervisor)
+	adaptive_gateway(adaptive_gateway)
+	supervisor_mesh(supervisor_mesh)
+	team_router(team_router)
+	financial_team_supervisor(financial_team_supervisor)
+	knowledge_team_supervisor(knowledge_team_supervisor)
+	support_team_supervisor(support_team_supervisor)
+	execution_governance(execution_governance)
+	financial_agent(financial_agent)
+	education_agent(education_agent)
+	rag_agent(rag_agent)
+	react_agent(react_agent)
+	report_agent(report_agent)
+	fallback_agent(fallback_agent)
+	task_completion(task_completion)
+	human_review_policy(human_review_policy)
+	human_review_interrupt(human_review_interrupt)
+	handoff_coordinator(handoff_coordinator)
+	conversation_summary(conversation_summary)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> context_builder;
+	adaptive_gateway -.-> execution_governance;
+	adaptive_gateway -.-> supervisor_mesh;
+	context_builder --> supervisor;
+	education_agent --> task_completion;
+	execution_governance -.-> education_agent;
+	execution_governance -.-> fallback_agent;
+	execution_governance -.-> financial_agent;
+	execution_governance -.-> rag_agent;
+	execution_governance -.-> react_agent;
+	execution_governance -.-> report_agent;
+	fallback_agent --> task_completion;
+	financial_agent --> task_completion;
+	financial_team_supervisor -.-> execution_governance;
+	financial_team_supervisor -.-> supervisor;
+	handoff_coordinator -.-> conversation_summary;
+	handoff_coordinator -.-> team_router;
+	human_review_interrupt -.-> conversation_summary;
+	human_review_interrupt -.-> handoff_coordinator;
+	human_review_interrupt -.-> team_router;
+	human_review_policy -.-> handoff_coordinator;
+	human_review_policy -.-> human_review_interrupt;
+	knowledge_team_supervisor -.-> execution_governance;
+	knowledge_team_supervisor -.-> supervisor;
+	rag_agent --> task_completion;
+	react_agent --> task_completion;
+	report_agent --> task_completion;
+	supervisor --> adaptive_gateway;
+	supervisor_mesh -.-> execution_governance;
+	supervisor_mesh -.-> team_router;
+	support_team_supervisor -.-> execution_governance;
+	support_team_supervisor -.-> supervisor;
+	task_completion --> human_review_policy;
+	team_router -.-> financial_team_supervisor;
+	team_router -.-> knowledge_team_supervisor;
+	team_router -.-> support_team_supervisor;
+	conversation_summary --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
